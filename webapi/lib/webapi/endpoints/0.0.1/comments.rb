@@ -35,7 +35,7 @@ Webapi::Endpoints::V001::Webapi.namespace '/comments' do
 
   put '/:id' do
     # description 'Update parameter for the comment.'
-    400
+    405
   end
 
   delete do
@@ -44,6 +44,6 @@ Webapi::Endpoints::V001::Webapi.namespace '/comments' do
 
   delete '/:id' do
     # description 'Delete the comment.'
-    400
+    405
   end
 end

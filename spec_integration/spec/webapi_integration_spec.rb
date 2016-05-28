@@ -47,10 +47,10 @@ describe 'Webapi Integration spec' do
     end
   end
 
-  # describe 'delete' do
-  #   it 'delete api not allowed' do
-  #     res = WebAPIClient::Comment.delete(comment["id"])
-  #     expect(res["code"]).to eq 405
-  #   end
-  # end
+  describe 'delete' do
+    it 'delete api not allowed' do
+      res = WebAPIClient::Comment.delete(comment["id"])
+      expect(res["code"]).to eq 405
+    end
+  end
 end
